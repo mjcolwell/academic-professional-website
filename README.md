@@ -1,2 +1,2 @@
 # academic-professional-website
-Source code for website created using HTML/CSS/JS.
+This is the source code for my personal website: https://michaeljcolwell.com/. Code contains HTML/CSS/JS. You are more than welcome to repurpose or modify this code, no strings attached. Please note the original website files are not included in this repo.

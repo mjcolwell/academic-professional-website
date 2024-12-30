@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - MJC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;400i;700;700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aboutmestyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <link rel="icon" href="./Images/Logo/Logo_Orig_small.png" type="image/x-icon">
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WEVEXX891Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WEVEXX891Z');
+</script>
+<body>
+    <div class="background-container">
+        <div class="blur-layer"></div>
+    </div>
+
+    <!-- Black Overlay (Initially hidden) -->
+    <div class="black-overlay"></div>
+
+    <!-- Background Toggle Button -->
+    <button class="background-toggle" id="background-toggle">
+        <img src="your-icon.png" alt="Toggle Background">
+    </button>
+    <script>
+        // Get the background toggle button and black overlay
+        const backgroundToggleButton = document.getElementById('background-toggle');
+        const blackOverlay = document.querySelector('.black-overlay');
+
+        // Function to toggle the overlay visibility
+        backgroundToggleButton.addEventListener('click', () => {
+            blackOverlay.classList.toggle('active'); // Toggle the 'active' class to show/hide the overlay
+        });
+    </script>
+
+    <!-- Header and Sidebar -->
+    <header class="header">
+        <h1>Michael J. Colwell, DPhil</h1>
+        <h2>• • •</h2>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="index.html">
+            <img src="./Images/Logo/Logo_Orig.png" alt="Logo" class="sidebar-logo">
+        </a>
+        <ul>
+            <li><a href="aboutme.html" class="about-link" style="color: rgba(188, 188, 188, 0.9); text-decoration: none;"><span class="arrow">></span> About Me</a></li>
+            <li><a href="cv.html">C.V.</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Photography</a>
+                <div class="dropdown-content">
+                    <a href="Photos_Highlights.html">Highlights</a>
+                    <a href="Photos_Backgrounds.html">Backgrounds / Wallpapers</a>
+                </div>
+            </li>
+            <li class="papers">
+                <a href="papers.html">Publications</a>
+            </li>
+            <li class="datasoftware">
+                <a href="datasoftware.html">Data / Software</a>
+            </li>
+            <li class="illustrations">
+                <a href="illustrations.html">Illustrations</a>
+            </li>
+        </ul>
+
+        <!-- Icon section -->
+        <div class="sidebar-icons">
+            <a href="https://github.com/mjcolwell">
+                <img src="./Images/Logo/Github_Logo.png" alt="Icon 1" class="icon">
+            </a>
+            <a href="https://orcid.org/0000-0001-7846-2879">
+                <img src="./Images/Logo/Orcid_Logo.png" alt="Icon 2" class="icon">
+            </a>       
+            <a href="https://scholar.google.co.uk/citations?user=vxh7ricAAAAJ&hl=en">
+                <img src="./Images/Logo/GoogleSch_Logo.png" alt="Icon 3" class="icon">
+            </a>    
+            <a href="https://uk.linkedin.com/in/michael-colwell-5787741b7n">
+                <img src="./Images/Logo/Linkedin_Logo.png" alt="Icon 4" class="icon">
+            </a>    
+            <a href="https://x.com/michaeljcolwell?lang=en">
+                <img src="./Images/Logo/Twitter(XTheEverythingApTM).png" alt="Icon 5" class="icon">
+            </a>    
+        </div>
+    </div>
+
+
+
+    <!-- Main content -->
+    <div class="content-box" id="about-section">
+        <h1>About Me</h1>
+        <p>My name is <b>Michael</b>; thanks for visiting my website! I am a cognitive neuroscientist interested in human behaviour, statistics, and data modelling. Currently, I am a postdoctoral researcher at the University of Oxford, where I also completed my DPhil (PhD) 
+            on work intersecting cognitive psychology and neurobiology. I previously worked in the National Health Service (UK) in data analysis and clinical-facing roles.</p>
+        <p> My work has been featured in the media, including <a href="https://www.mirror.co.uk/news/health/serotonin-sertraline-depression-mental-health-34109842" target="_blank" rel="noopener noreferrer">The Mirror</a>, <a href="https://inews.co.uk/news/why-antidepressants-work-serotonin-3215154?ico=most_popular" target="_blank" rel="noopener noreferrer">The I</a>, <a href="https://medicalxpress.com/news/2024-08-serotonin-people-negative.html" target="_blank" rel="noopener noreferrer">MedicalXPress</a> and the <a href="https://www.ox.ac.uk/news/2024-08-09-serotonin-changes-how-people-learn-and-respond-negative-information" target="_blank" rel="noopener noreferrer">University of Oxford frontpage</a>.</p>
+        <p> I created this website mainly as I wanted to improve my skills with CSS and JavaScript. However, it was also a means to  consolidate my skills, 
+            experience and publications (and to have a home for my photos as well!). 
+        <br>
+        <p>If you would like to know more about my skills and experience, please see my <a href="cv.html" target="_blank" rel="noopener noreferrer">C.V. section</a>.</p>
+        </div>
+         <div class="content-box" id="contact-section">
+         <h1>Research</h1>
+            
+         <p>I am always on the lookout for research opportunities. If you would like to work with me or need some advice on a piece of work where my skills align, please reach out. You can reach me at my current academic email — <a href="mailto:michaelcolwell92@gmail.com" target="_blank" rel="noopener noreferrer">michael.colwell@psych.ox.ac.uk</a>.</p>
+        </div>
+
+        <div class="content-box" id="Photography-section">
+        <h1>Photography</h1>
+         <p>All photos displayed on this website (incl. website backgrounds) were shot and processed by myself using a mixture of Sony Alpha range and old Nikon DLSR cameras. I use Photoshop CC 2019 exclusively 
+                to process photos (no Lightroom). If you are interested in the full versions/raws of photos or even prints, I would be happy to arrange something for you! You can reach me on my personal email — <a href="mailto:michaelcolwell92@gmail.com" target="_blank" rel="noopener noreferrer">michaelcolwell92@gmail.com</a>.</p>
+        </div>
+
+            <div class="empty-space"></div>
+
+    </div>
+
+    <div class ="content-box2"><div class="empty-space" id = "Pic_transition"></div></div>
+    <div class="Profile-pic">
+        <a href="#">
+            <img src="./Images/Profile_Pic.png" alt="Profile Picture">
+        </a>
+    </div>
+
+    <!-- Footer with image and copyright message -->
+    <div class="footer">
+        <div class="footer-text">
+            <p>Looks like this is the end (Dec 2024). Website created by MJC using CSS/JS/HTML and published under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.</p>
+        </div>
+    </div>
+
+    <script src="script_am.js"></script>
+</body>
+
+
+</html>

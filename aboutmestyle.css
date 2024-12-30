@@ -1,0 +1,581 @@
+/* General body styling */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a; /* Almost pitch black with a very slight gray tone */
+    background: url('your-background-image.jpg') no-repeat center center fixed; /* Example background image */
+    background-size: cover;
+}
+
+/* Optional: Adjust text styles */
+.content h1, .content p {
+    margin: 10px 0;
+    color: #181818;
+}
+
+.content-box h1 {
+    margin-top: 0; /* Remove the default top margin */
+    margin-bottom: 10px; /* Optional: Add spacing below the heading */
+}
+
+/* Shared styles for all content sections */
+.content-box {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(13, 17, 18, 0.5);
+    padding: 20px;
+    backdrop-filter: blur(5.5px);
+    border-radius: 5px;
+    box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.05);
+    max-width: 40%;
+    margin: 20px auto; /* Center horizontally with vertical spacing */
+    overflow-y: auto;
+    color: white; /* Ensure text is readable */
+}
+
+/* Shared styles for all content sections */
+.content-box2 {
+    position: absolute;
+    z-index: 0;
+    top: 180px;
+    left: 1376px;
+    background-color: rgba(13, 17, 18, 0.5);
+    padding: 150px;
+    backdrop-filter: blur(5.5px);
+    border-radius: 5px;
+    box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.05);
+    max-width: 40%;
+    margin: 20px auto; /* Center horizontally with vertical spacing */
+    overflow-y: auto;
+    color: white; /* Ensure text is readable */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Smooth fade-in effect */
+}
+
+
+/* Example customization for specific sections */
+#about-section {
+    margin-top: 200px; /* Add extra spacing for this section */
+    margin-left: 250px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Smooth fade-in effect */
+}
+
+#contact-section {
+    margin-top: 0px;
+    margin-left: 250px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Smooth fade-in effect */
+}
+
+#Photography-section{
+    margin-top: 0px;
+    margin-left: 250px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Smooth fade-in effect */
+}
+
+/* Optional: Adjust text styles for headings and paragraphs inside the content box */
+.content3 h1, .content3 p {
+    margin: 10px 0;
+    color: white; /* Ensure text inside <h1> and <p> is white */
+}
+
+/* Content section with slight gray box and blur effect */
+.content4 {
+    position: relative;
+    z-index: 1; /* Ensure content stays above the background */
+    background-color: rgba(13, 17, 18, 0.5); /* Slight gray box with transparency */
+    padding: 20px;
+    backdrop-filter: blur(5.5px); /* Apply blur effect to the background */
+    margin: -140px 250px; /* Adjust the margin to ensure content doesn't overlap the header */
+    border-radius: 5px; /* Optional: rounded corners for the content box */
+    color: #101010; /* Text color inside the content box */
+    box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.05); /* Optional: soft shadow for the content box */
+    max-width: 40%; /* Limit the width of the content box (can adjust to fit your design) */
+    overflow-y: false; /* Enable scrolling if content exceeds the box's height */    
+}
+
+/* Optional: Adjust text styles for headings and paragraphs inside the content box */
+.content4 h1, .content4 p {
+    margin: 10px 0;
+    color: white; /* Ensure text inside <h1> and <p> is white */
+}
+
+/* Content section with slight gray box and blur effect */
+.content5 {
+    position: relative;
+    z-index: 1; /* Ensure content stays above the background */
+    background-color: rgba(13, 17, 18, 0.0); /* Slight gray box with transparency */
+    padding: 20px;
+    margin: -135px 250px; /* Adjust the margin to ensure content doesn't overlap the header */
+    border-radius: 5px; /* Optional: rounded corners for the content box */
+    box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.05); /* Optional: soft shadow for the content box */
+    max-width: 40%; /* Limit the width of the content box (can adjust to fit your design) */
+    overflow-y: false; /* Enable scrolling if content exceeds the box's height */    
+}
+
+/* Default background styling */
+.background-container {
+    position: fixed;
+    top: 0;
+    background-color: rgb(6, 10, 11); /* Slight gray box with transparency */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Behind the content */
+    transition: opacity 0.5s ease-in-out; /* Transition for smooth opacity change */
+    background-size: cover;
+    opacity: 1; /* Initial opacity */
+}
+
+/* The 'active' class makes the new background fade in */
+.background.active {
+    opacity: 1;
+}
+
+/* When the black background is applied (static background mode) */
+.black-background {
+    background-color: #0a0a0a; /* Black background for static mode */
+    background-image: none !important; /* Ensure no dynamic image is shown */
+}
+
+/* Prevent background image changes when toggle is off */
+.background-container.no-dynamic-background {
+    background-image: none;
+    background-color: #0a0a0a; /* Static background color */
+}
+
+/* Optional: Adjust text styles for headings and paragraphs inside the content box */
+.content h1, .content p {
+    margin: 10px 0;
+    color: white; /* Ensure text inside <h1> and <p> is white */
+}
+
+/* Ensure header text is white */
+.header h1, .header h2 {
+    margin: 10px;
+    color: white; /* Set text color to white for both h1 and h2 */
+}
+
+/* Main content area */
+.content {
+    margin-left: 250px; /* Sidebar width */
+    padding-top: 50px; /* Adjust this padding to ensure the content doesn't go too far down */
+}
+
+/* Individual background styling */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center; /* Center the background */
+    opacity: 0; /* Start with invisible background */
+    transition: opacity 2s ease-in-out;
+    animation: scrollBackground 32s linear infinite;
+}
+
+/* When the background is active, make it visible */
+.background.active {
+    opacity: 1;
+}
+
+/* Scrolling animation for background */
+@keyframes scrollBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+.Profile-pic {
+    position: absolute;
+    top: 225px;
+    left: 1400px;
+    height: auto; /* Maintains the image's aspect ratio */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Smooth fade-in effect */
+}
+
+/* Header section */
+.header {
+    width: 100%;
+    height: 150px; /* Large height for the header */
+    background-color: transparent; /* No background color */
+    text-align: center; /* Center the text */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in height */
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure the header stays on top */
+}
+
+
+
+/* Ensure no unnecessary horizontal scrolling by removing any large margins or paddings */
+body {
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: transparent; /* No background color */
+    color: white;
+    position: fixed;
+    top: 150px; /* Start the sidebar below the header */
+    left: 0;
+    padding-top: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar logo styling (Image at the top of the sidebar) */
+.sidebar-logo {
+    width: 150px; /* Make the image slightly bigger */
+    margin-left: 20px; /* Align the image with the sidebar text */
+    margin-bottom: 15px; /* Space below the image */
+    display: block;
+}
+
+/* Sidebar list */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 15px; /* Adjust the list slightly more to the left */
+}
+
+/* Sidebar list items */
+.sidebar ul li {
+    padding: 15px 20px;
+}
+
+/* Sidebar links */
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1.5em; /* Increase font size */
+    transition: color 0.3s ease; /* Transition effect for color change */
+    padding-left: 5px; /* Move the text slightly back to the left */
+}
+
+/* Sidebar links hover effect */
+.sidebar ul li a:hover {
+    color: #999; /* Slightly darker gray text color */
+}
+
+/* Apply blur effect to the background image when hovering over the sidebar links */
+.sidebar ul li a:hover ~ .background-container .background {
+    filter: blur(5px); /* Apply blur to the background when hovering over a sidebar link */
+}
+
+/* Dropdown button */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    position: absolute;
+    top: 100%; /* Position below the dropdown button */
+    left: 0;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Fully transparent initially */
+    transition: opacity 1s ease-in-out, visibility 0s 1s; /* Fade-in transition */
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    margin-left: 35px; /* Slightly indent dropdown options */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content a:hover {
+    color: #999; /* Slightly darker gray on hover */
+}
+
+/* Show dropdown when open */
+.dropdown.open .dropdown-content {
+    visibility: visible; /* Make visible */
+    opacity: 1; /* Fully opaque */
+    transition: opacity 1s ease-in-out, visibility 0s 0s; /* Fade-in effect */
+}
+
+.dropdown.close .dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0s;
+}
+
+/* "Papers" link animation */
+.sidebar ul li.papers {
+    transition: transform 0.5s ease; /* Smooth movement */
+}
+
+.sidebar ul li.papers.open,
+.sidebar ul li.datasoftware.open {
+    transform: translateY(120px); /* Move both Papers and Datasoftware links together */
+}
+
+/* "Datasoftware" link animation */
+.sidebar ul li.datasoftware {
+    transition: transform 0.5s ease; /* Smooth movement */
+}
+
+/* "Papers" and "Datasoftware" links animation when dropdown is opened */
+.sidebar ul li.papers.open,
+.sidebar ul li.datasoftware.open {
+    transform: translateY(120px); /* Both items move down together */
+}
+
+/* Datasoftware text style */
+.sidebar ul li.datasoftware a {
+    font-size: 1.5em; /* Same size as other links */
+    color: white;
+}
+
+/* Hover effect for "Papers" and "Datasoftware" links */
+.sidebar ul li.papers a:hover,
+.sidebar ul li.datasoftware a:hover {
+    color: #999;
+}
+
+/* Added extra indentation for dropdown items "Portrait" and "Backgrounds" to the RIGHT */
+.sidebar ul li.portrait,
+.sidebar ul li.backgrounds {
+    padding-right: 40px; /* Increased indentation when dropdown is open */
+}
+
+/* Ensure all dropdown items including "Portrait" and "Backgrounds" are also indented when active */
+.dropdown.open .sidebar ul li.portrait,
+.dropdown.open .sidebar ul li.backgrounds {
+    padding-right: 50px; /* Further indentation when dropdown is open */
+}
+
+/* Sidebar icons container */
+.sidebar-icons {
+    display: flex; /* Ensures icons are laid out in a row (if not already) */
+    align-items: flex-start; /* Align icons to the start of the container */
+    margin-top: 20px; /* Adds spacing above the icons container */
+    padding-left: 20px; /* Moves the icons slightly to the right */
+    gap: 15px; /* Creates consistent spacing between the icons */
+}
+
+/* Individual icon styling */
+.icon {
+    width: 30px; /* Adjust size of the icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Adds a hover effect for scaling */
+}
+
+/* Icon hover effect */
+.icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Sidebar icons animation */
+.sidebar-icons {
+    transition: transform 0.5s ease; /* Smooth movement */
+}
+
+.sidebar-icons.open {
+    transform: translateY(120px); /* Move the icons down */
+}
+
+/* Professional Illustrations / Artwork link style */
+.sidebar ul li.illustrations {
+    transition: transform 0.5s ease;
+}
+
+.sidebar ul li.illustrations.open {
+    transform: translateY(120px); /* Move the Illustrations link when dropdown is open */
+}
+
+/* "Illustrations" link animation */
+.sidebar ul li.illustrations a {
+    font-size: 1.5em; /* Same font size */
+    color: white;
+}
+
+.sidebar ul li.illustrations a:hover {
+    color: #999; /* Hover effect for the new link */
+}
+
+/* Footer section */
+.footer {
+    position: fixed; /* Keep the footer fixed at the bottom of the page */
+    bottom: 0; /* Align it at the bottom */
+    right: 0; /* Align it to the right side */
+    background-color: rgba(18, 18, 18, 0.2); /* Slightly transparent dark background */
+    width: auto; /* Adjust the width to content */
+    color: white; /* White text for contrast */
+    padding: 10px 20px; /* Padding for spacing */
+    font-size: 0.8em; /* Smaller font size */
+    text-align: right; /* Right align the text */
+    z-index: 10; /* Ensure it stays on top */
+}
+
+/* Make sure the paragraph in the footer has proper spacing and alignment */
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply Playfair Display font to the website title */
+.header h1 {
+    font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+    opacity: 1; /* Default opacity */
+    font-size: 3.33em; /* Adjust the font size (e.g., 3em is large, change it to your preference) */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Title is invisible at the start */
+    }
+    100% {
+        opacity: 0.9; /* Title becomes fully visible */
+    }
+}
+
+/* Target the <h1> and <h2> in the header */
+.header h1 {
+    margin-bottom: 1px; /* Reduce the gap below h1 */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Initial styling for the logo */
+.sidebar-logo {
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Make the logo slightly transparent when hovered */
+.sidebar-logo:hover {
+    opacity: 0.7; /* Adjust opacity to 0.7 for slight transparency */
+}
+
+/* Make <h1> slightly transparent on hover */
+h1:hover {
+    opacity: 0.7; /* Adjust opacity to 0.7 for slight transparency */
+}
+
+/* Make <h2> slightly transparent on hover */
+h2:hover {
+    opacity: 0.4; /* Adjust opacity to 0.4 for slight transparency */
+}
+
+/* Background toggle button */
+.background-toggle {
+    position: fixed;
+    top: 40px; /* Adjust distance from the top */
+    right: 20px; /* Adjust distance from the right */
+    z-index: 20; /* Ensure it appears above other elements */
+    background: transparent; /* Make the button background transparent */
+    border: none; /* Remove any border */
+    padding: 0; /* Remove any padding */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Background toggle button image */
+.background-toggle img {
+    width: 45px; /* Set icon size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any unwanted space around the image */
+    margin: 0; /* Remove margin if there's any */
+    padding: 0; /* Remove padding */
+    opacity: 0.85;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Hover effect on the icon */
+.background-toggle img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Initial state of the link */
+.about-link {
+    color: rgba(188, 188, 188, 0.9);
+    text-decoration: none;
+    display: inline-block;
+    left: -20px; /* Start 10px to the left */
+    opacity: 0; /* Initially invisible */
+    transform: translateX(-10px); /* Start at the original position */
+    position: relative; /* Ensure it moves relative to its original position */
+    animation: moveRight 0.6s ease-out forwards; /* Apply the animation */
+}
+
+/* The ">" symbol is initially hidden */
+.arrow {
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+    margin-right: 5px; /* Space between the arrow and the text */
+}
+
+/* Keyframes for the animation */
+@keyframes moveRight {
+    0% {
+        transform: translateX(-10px); /* Start from the original position */
+        opacity: 0; /* Initially invisible */
+    }
+    100% {
+        transform: translateX(20px); /* Move the link to the right */
+        opacity: 1; /* Make the link fully visible */
+    }
+}
+
+/* When the animation finishes, make the ">" symbol visible before the text */
+.about-link.finished .arrow {
+    opacity: 1; /* Show the ">" symbol */
+}
+/* Center content inside each slick slide */
+.slick-slide {
+    display: flex;
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;      /* Centers content vertically */
+    text-align: center;       /* Ensures the text inside is centered */
+}
+
+/* If the slide contains an image, ensure it is centered inside the slide */
+.slick-slide img {
+    max-width: 100%;  /* Ensures the image is responsive */
+    height: auto;
+    margin: 0 auto;   /* Centers the image */
+}
+/* Normal state of the link */
+a {
+    color: #2faad7; /* Change this to the color you want */
+    text-decoration: none; /* Optional: remove underline */
+}
+
+/* Hover state of the link */
+a:hover {
+    color: #a3e4fc; /* Change this to the color you want when the link is hovered */
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+/* Active state (when link is clicked) */
+a:active {
+    color: #e15385; /* Change this to the color you want when the link is active (clicked) */
+}
+
+/* Visited state (after link has been clicked) */
+a:visited {
+    color: #ad7ddb; /* Change this to the color you want for visited links */
+}

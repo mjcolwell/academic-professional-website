@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos - Highlights - MJC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;400i;700;700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./Slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./Slick/slick-theme.css"/>
+    <link rel="stylesheet" href="Photos_Highlights.css">
+    <link rel="icon" href="./Images/Logo/Logo_Orig_small.png" type="image/x-icon">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WEVEXX891Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WEVEXX891Z');
+</script>
+<body>
+    <div class="background-container">
+        <div class="blur-layer"></div>
+    </div>
+
+    <!-- Black Overlay (Initially hidden) -->
+    <div class="black-overlay"></div>
+
+    <!-- Background Toggle Button -->
+    <button class="background-toggle" id="background-toggle">
+        <img src="your-icon.png" alt="Toggle Background">
+    </button>
+    <script>
+        // Get the background toggle button and black overlay
+        const backgroundToggleButton = document.getElementById('background-toggle');
+        const blackOverlay = document.querySelector('.black-overlay');
+
+        // Function to toggle the overlay visibility
+        backgroundToggleButton.addEventListener('click', () => {
+            blackOverlay.classList.toggle('active'); // Toggle the 'active' class to show/hide the overlay
+        });
+    </script>
+
+    <!-- Header and Sidebar -->
+    <header class="header">
+        <h1>Michael J. Colwell, DPhil</h1>
+        <h2>• • •</h2>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="index.html">
+            <img src="./Images/Logo/Logo_Orig.png" alt="Logo" class="sidebar-logo">
+        </a>
+        <ul>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="cv.html">C.V.</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Photography</a>
+                <div class="dropdown-content">
+                    <a href="Photos_Highlights.html" class="about-link" style="color: rgba(188, 188, 188, 0.9); text-decoration: none;">> Highlights</a>
+                    
+                    <a href="Photos_Backgrounds.html">Backgrounds / Wallpapers</a>
+                </div>
+            </li>
+            <li class="papers">
+                <a href="papers.html">Publications</a>
+            </li>
+            <li class="datasoftware">
+                <a href="datasoftware.html">Data / Software</a>
+            </li>
+            <li class="illustrations">
+                <a href="illustrations.html">Illustrations</a>
+            </li>
+        </ul>
+
+        <!-- Icon section -->
+        <div class="sidebar-icons">
+            <a href="https://github.com/mjcolwell">
+                <img src="./Images/Logo/Github_Logo.png" alt="Icon 1" class="icon">
+            </a>
+            <a href="https://orcid.org/0000-0001-7846-2879">
+                <img src="./Images/Logo/Orcid_Logo.png" alt="Icon 2" class="icon">
+            </a>       
+            <a href="https://scholar.google.co.uk/citations?user=vxh7ricAAAAJ&hl=en">
+                <img src="./Images/Logo/GoogleSch_Logo.png" alt="Icon 3" class="icon">
+            </a>    
+            <a href="https://uk.linkedin.com/in/michael-colwell-5787741b7n">
+                <img src="./Images/Logo/Linkedin_Logo.png" alt="Icon 4" class="icon">
+            </a>    
+            <a href="https://x.com/michaeljcolwell?lang=en">
+                <img src="./Images/Logo/Twitter(XTheEverythingApTM).png" alt="Icon 5" class="icon">
+            </a>    
+        </div>
+    </div>
+
+<div class="Title"><h1>Photography - Highlights</h1></div>
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="empty-space"></div>
+    </div>
+        
+</div>
+
+<!-- Gallery -->
+<!-- Updated Image List -->
+<!-- Modal Structure -->
+<!-- Modal Structure -->
+<!-- Modal Structure -->
+<div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <span class="prev" onclick="changeImage(-1)">&#10094;</span> <!-- Left Arrow -->
+    <span class="next" onclick="changeImage(1)">&#10095;</span> <!-- Right Arrow -->
+    <img class="modal-content" id="modal-image">
+    <div id="modal-caption"></div>
+</div>
+
+<!-- Updated Image List -->
+<ulp>
+    <li>
+        <a href="javascript:void(0)">
+            <figure>
+                <img src='./Photography/Highlights/Highlight_1.jpg' 
+                     alt='' 
+                     onclick="openModal(this)">
+                <figcaption>Kyoto, JPN</figcaption>
+            </figure>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:void(0)">
+            <figure>
+                <img src='./Photography/Highlights/Highlight_2.jpg' 
+                     alt='' 
+                     onclick="openModal(this)">
+                <figcaption>Shibuya, JPN</figcaption>
+            </figure>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:void(0)">
+            <figure>
+                <img src='./Photography/Highlights/Highlight_3.jpg' 
+                     alt='' 
+                     onclick="openModal(this)">
+                <figcaption>Wan Chai, HK</figcaption>
+            </figure>
+        </a>
+    </li>
+    <a href="javascript:void(0)">
+        <figure>
+            <img src='./Photography/Highlights/Highlight_5.jpg' 
+                 alt='' 
+                 onclick="openModal(this)">
+            <figcaption>Kyoto, JPN</figcaption>
+        </figure>
+    </a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_6.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Asakusa, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_8.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Himeji, JP</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_4.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Osaka, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_7.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Admiralty, HK</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_10.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Wan Chai, HK</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_9.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Wan Chai, HK</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_12.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Shibuya, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_13.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Osaka, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_14.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Kyoto, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_15.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Kowloon, HK</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_19.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Arashiyama, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_11.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Himeji, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_16.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Wan Chai, HK</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_18.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Chuo City, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_20.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Shibuya, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_21.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Starstreet Precinct, HK</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_24.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Enoshima, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_23.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Osaka, JPN</figcaption>
+    </figure>
+</a>
+</li>
+
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_22.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Osaka, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_30.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Osaka, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_25.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Ueno, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_26.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Wan Chai, HK</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_27.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Kyoto, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_29.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Osaka, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_32.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Arashiyama, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_34.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Enoshima, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_35.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Oshiage, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_41.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Kyoto, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_37.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Shibuya, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_39.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Causeway Bay, JPN</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_40.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Wan Chai, HK</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Photography/Highlights/Highlight_38.jpg' 
+             alt='' 
+             onclick="openModal(this)">
+        <figcaption>Admiralty, HK</figcaption>
+    </figure>
+</a>
+</li>
+</ulp>
+
+<script>
+const images = Array.from(document.querySelectorAll('ulp img'));
+let currentIndex = 0;
+
+// Function to open the modal and display the clicked image
+function openModal(image) {
+    const modal = document.getElementById('image-modal');
+    const modalImage = document.getElementById('modal-image');
+    const modalCaption = document.getElementById('modal-caption');
+
+    modal.style.display = 'block'; // Show the modal
+    modalImage.src = image.src;   // Set the modal image to the clicked image
+    modalCaption.textContent = image.alt; // Set the caption
+
+    // Update currentIndex to match the clicked image
+    currentIndex = images.indexOf(image);
+}
+
+// Function to change the image
+function changeImage(direction) {
+    const modalImage = document.getElementById('modal-image');
+    const modalCaption = document.getElementById('modal-caption');
+
+    // Calculate the new index (loop around with modulo operator)
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+
+    // Update the modal with the new image and caption
+    modalImage.src = images[currentIndex].src;
+    modalCaption.textContent = images[currentIndex].alt;
+}
+
+// Close modal when the close button is clicked
+document.querySelector('.close').onclick = function () {
+    const modal = document.getElementById('image-modal');
+    modal.style.display = 'none';
+};
+
+// Close modal when clicking outside the image
+window.onclick = function (event) {
+    const modal = document.getElementById('image-modal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+};
+    </script>
+
+
+    <!-- Footer with image and copyright message -->
+    <div class="footer">
+        <div class="footer-text">
+            <p>Looks like this is the end (Dec 2024). Website created by MJC using CSS/JS/HTML and published under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.</p>
+        </div>
+    </div>
+
+    <script src="script_un.js"></script>
+</body>
+
+
+</html>

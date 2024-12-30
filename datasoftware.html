@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data / Software - MJC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;400i;700;700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="papers.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <link rel="icon" href="./Images/Logo/Logo_Orig_small.png" type="image/x-icon">
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WEVEXX891Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WEVEXX891Z');
+</script>
+<body>
+    <div class="background-container">
+        <div class="blur-layer"></div>
+    </div>
+
+    <!-- Black Overlay (Initially hidden) -->
+    <div class="black-overlay"></div>
+
+    <!-- Background Toggle Button -->
+    <button class="background-toggle" id="background-toggle">
+        <img src="your-icon.png" alt="Toggle Background">
+    </button>
+    <script>
+        // Get the background toggle button and black overlay
+        const backgroundToggleButton = document.getElementById('background-toggle');
+        const blackOverlay = document.querySelector('.black-overlay');
+
+        // Function to toggle the overlay visibility
+        backgroundToggleButton.addEventListener('click', () => {
+            blackOverlay.classList.toggle('active'); // Toggle the 'active' class to show/hide the overlay
+        });
+    </script>
+
+    <!-- Header and Sidebar -->
+    <header class="header">
+        <h1>Michael J. Colwell, DPhil</h1>
+        <h2>• • •</h2>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="index.html">
+            <img src="./Images/Logo/Logo_Orig.png" alt="Logo" class="sidebar-logo">
+        </a>
+        <ul>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="cv.html">C.V.</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Photography</a>
+                <div class="dropdown-content">
+                    <a href="Photos_Highlights.html">Highlights</a>
+                    <a href="Photos_Backgrounds.html">Backgrounds / Wallpapers</a>
+                </div>
+            </li>
+            
+            <li class="papers">
+                <a href="papers.html">Publications</a>
+            </li>
+            <li class="datasoftware">
+                <a href="datasoftware.html" class="about-link" style="color: rgba(188, 188, 188, 0.9); text-decoration: none;"><span class="arrow">></span> Data / Software</a></li>
+            </li>
+            <li class="illustrations">
+                <a href="illustrations.html">Illustrations</a>
+            </li>
+        </ul>
+
+        <!-- Icon section -->
+        <div class="sidebar-icons">
+            <a href="https://github.com/mjcolwell">
+                <img src="./Images/Logo/Github_Logo.png" alt="Icon 1" class="icon">
+            </a>
+            <a href="https://orcid.org/0000-0001-7846-2879">
+                <img src="./Images/Logo/Orcid_Logo.png" alt="Icon 2" class="icon">
+            </a>       
+            <a href="https://scholar.google.co.uk/citations?user=vxh7ricAAAAJ&hl=en">
+                <img src="./Images/Logo/GoogleSch_Logo.png" alt="Icon 3" class="icon">
+            </a>    
+            <a href="https://uk.linkedin.com/in/michael-colwell-5787741b7n">
+                <img src="./Images/Logo/Linkedin_Logo.png" alt="Icon 4" class="icon">
+            </a>    
+            <a href="https://x.com/michaeljcolwell?lang=en">
+                <img src="./Images/Logo/Twitter(XTheEverythingApTM).png" alt="Icon 5" class="icon">
+            </a>    
+        </div>
+    </div>
+
+
+
+    <!-- Main content -->
+    <div class="content-box" id="about-section">
+        <h1>Psychological Task Software</h1>
+        <p>Below are some examples of psychological tasks I have developed. All tasks are free to use under their respective licenses. If you would like to know more, please reach out to me at <a href="mailto:michaelcolwell92@gmail.com" target="_blank" rel="noopener noreferrer">michael.colwell@psych.ox.ac.uk</a>.</p>
+        <h2>Affective Interference Go/No-Go Task</h2>
+        <a href="#">
+            <img src="./Images/GNG_Smaller.png" alt="Affective Go/No-Go task">
+        </a>
+        <p>A free psychological task measuring behavioural inhibition during interference with affective distractors. Initially developed for use in <a href="https://www.nature.com/articles/s41467-024-50394-x" target="_blank" rel="noopener noreferrer">this study</a>, and is currently in use across multiple
+            active research studies, including studies on remitted depression and GLP-1 agonists in the Department of Psychiatry, University of Oxford. Available for free on the <a href="https://github.com/mjcolwell/emotional_go_no_go" target="_blank" rel="noopener noreferrer">github repository</a>.</p>
+        <p>For an example dataset and processing pipeline, please visit <a href="https://github.com/mjcolwell/SSRA_human_behaviour_data_and_code/tree/main/EGNG_non-model_analysis" target="_blank" rel="noopener noreferrer">here</a>.</p>
+        <p>The task materials and preprocessing script are offered free of charge for researchers. It is requested that researchers who publish work using these materials (task or preprocessing script) cite the below paper(s).
+            
+        <p>Main paper reference:</p>   
+
+        <p>Colwell, M. J., Tagomori, H., Cheng, H., Shang, F., Wigg, C.E., Browning, M. J., Cowen, P.J., Murphy, S.E., & Harmer, C. J. (2024). Direct serotonin release in humans shapes aversive learning and inhibition. <i>Nature Communications</i>, 15, 6617. <a href="https://www.nature.com/articles/s41467-024-50394-x" target="_blank" rel="noopener noreferrer">https://www.nature.com/articles/s41467-024-50394-x</a></p>
+        
+        <h2>Verbal <i>n</i>-Back (fMRI / non-scanner)</h2>
+        <a href="#">
+            <img src="./Images/Nback_Smaller.png" alt="Nback task">
+        </a>
+        <p>A task measuring complex verbal working memory (verbal <i>n</i>-back) designed for non-scanner and scanner (fMRI) use. Designed and rolled out across multiple research studies, including multiple psychopharmacology studies and a neuroimaging study (<a href="https://clinicaltrials.gov/study/NCT05849675" target="_blank" rel="noopener noreferrer">NCT05849675</a>).</p>
+        <p>Available for free on the <a href="https://github.com/mjcolwell/n-back_oxford" target="_blank" rel="noopener noreferrer">github repository</a>. Data processing and analysis scripts, including an automatic temporal-task synchronisation scripts, are included in the <a href="https://github.com/mjcolwell/n-back_oxford/tree/main/Scripts" target="_blank" rel="noopener noreferrer">here</a>.</p>
+        <p>The task materials and preprocessing script are offered free of charge for researchers. It is requested that researchers who publish work using these materials (task or preprocessing script) cite the below information.
+        <p>Main repository reference:</p>   
+        <p>Colwell, M., Tagomori, H., Martens, M., Murphy, S., & Harmer, C. (2023). N-Back (Oxford) - fMRI and non-scanner release (Python). <i>Zenodo</i>. <a href="https://doi.org/10.5281/zenodo.8003407" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.8003407</a></p>
+        
+        <h2>Partial Report Change Detection Task</h2>
+        <a href="#">
+            <img src="./Images/CCT.gif" alt="CCT task">
+        </a>
+        <p>A task measuring visuo-spatial working memory designed for mouse/track-pad only use. The task includes memory for spatial and feature (colour) information. Colours in the task use a palette known as 'Color Universal Design (CUD)' created by Masataka Okabe and Kei Ito to allow colour discriminations across all colour-blind populations.  </p>
+        <p>Available for free on the <a href="https://github.com/mjcolwell/change_detection_task_oxford/tree/main" target="_blank" rel="noopener noreferrer">github repository</a>, including data preprocessing scripts. The task materials and preprocessing script are offered free of charge for researchers. It is requested that researchers who publish work using these materials (task or preprocessing script) cite the below paper(s).
+
+        <p>Main repository reference:</p>   
+
+        <p>Colwell, M., Murphy, S., & Harmer, C. (2023). Colour Change Detection Task (Oxford, PERL) (Psychopy). <i>Zenodo</i>. <a href="https://zenodo.org/records/8003373" target="_blank" rel="noopener noreferrer">https://zenodo.org/records/8003373</a></p>
+
+        </div>
+
+
+
+         <div class="content-box" id="contact-section">
+         <h1>Data / Processing pipelines</h1>
+        <p>For published academic papers, I strive to provide reproducibile data processing pipelines in line with open science principles. These pipelines show how the raw, de-identified data during study experimentation were cleaned, preprocessed, computationally modelled (if appropriate) and statistically analysed. Please visit my github for a <a href="https://github.com/mjcolwell/SSRA_human_behaviour_data_and_code" target="_blank" rel="noopener noreferrer">recent example</a>.
+
+    </div>
+
+    <div class="content-box" id="Photography-section">
+        <h1>Website</h1>
+        <p>This website was created using CSS/JS/HTML. Please visit the <a href="https://github.com/mjcolwell/academic-professional-website" target="_blank" rel="noopener noreferrer">github repository</a> where the website source code and files are hosted. You are welcome to reuse the website design, however the images on the website are not shared for open source use.</p>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Footer with image and copyright message -->
+    <div class="footer">
+        <div class="footer-text">
+            <p>Looks like this is the end (Dec 2024). Website created by MJC using CSS/JS/HTML and published under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.</p>
+        </div>
+    </div>
+
+    <script src="script_pubs.js"></script>
+</body>
+
+
+</html>

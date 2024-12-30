@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustrations - MJC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;400i;700;700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Illustrations.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <link rel="icon" href="./Images/Logo/Logo_Orig_small.png" type="image/x-icon">
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WEVEXX891Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WEVEXX891Z');
+</script>
+<body>
+    <div class="background-container">
+        <div class="blur-layer"></div>
+    </div>
+
+    <!-- Black Overlay (Initially hidden) -->
+    <div class="black-overlay"></div>
+
+    <!-- Background Toggle Button -->
+    <button class="background-toggle" id="background-toggle">
+        <img src="your-icon.png" alt="Toggle Background">
+    </button>
+    <script>
+        // Get the background toggle button and black overlay
+        const backgroundToggleButton = document.getElementById('background-toggle');
+        const blackOverlay = document.querySelector('.black-overlay');
+
+        // Function to toggle the overlay visibility
+        backgroundToggleButton.addEventListener('click', () => {
+            blackOverlay.classList.toggle('active'); // Toggle the 'active' class to show/hide the overlay
+        });
+    </script>
+
+    <!-- Header and Sidebar -->
+    <header class="header">
+        <h1>Michael J. Colwell, DPhil</h1>
+        <h2>• • •</h2>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="index.html">
+            <img src="./Images/Logo/Logo_Orig.png" alt="Logo" class="sidebar-logo">
+        </a>
+        <ul>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="cv.html">C.V.</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Photography</a>
+                <div class="dropdown-content">
+                    <a href="Photos_Highlights.html">Highlights</a>
+                    <a href="Photos_Backgrounds.html">Backgrounds / Wallpapers</a>
+                </div>
+            </li>
+            
+            <li class="papers">
+                <a href="papers.html">Publications</a>
+
+            </li>
+            <li class="datasoftware">
+                <a href="datasoftware.html">Data / Software</a>
+            </li>
+            <li class="illustrations">
+                <a href="illustrations.html" class="about-link" style="color: rgba(188, 188, 188, 0.9); text-decoration: none;"><span class="arrow">></span> Illustrations</a></li>
+            </li>
+        </ul>
+
+        <!-- Icon section -->
+        <div class="sidebar-icons">
+            <a href="https://github.com/mjcolwell">
+                <img src="./Images/Logo/Github_Logo.png" alt="Icon 1" class="icon">
+            </a>
+            <a href="https://orcid.org/0000-0001-7846-2879">
+                <img src="./Images/Logo/Orcid_Logo.png" alt="Icon 2" class="icon">
+            </a>       
+            <a href="https://scholar.google.co.uk/citations?user=vxh7ricAAAAJ&hl=en">
+                <img src="./Images/Logo/GoogleSch_Logo.png" alt="Icon 3" class="icon">
+            </a>    
+            <a href="https://uk.linkedin.com/in/michael-colwell-5787741b7n">
+                <img src="./Images/Logo/Linkedin_Logo.png" alt="Icon 4" class="icon">
+            </a>    
+            <a href="https://x.com/michaeljcolwell?lang=en">
+                <img src="./Images/Logo/Twitter(XTheEverythingApTM).png" alt="Icon 5" class="icon">
+            </a>    
+        </div>
+    </div>
+
+
+
+    <!-- Main content -->
+    <div class="content-box" id="about-section">
+        <h1>Professional Illustrations</h1>
+        <div class="empty-space"></div>
+        </div>
+    </div>
+
+
+<!-- Gallery -->
+<!-- Updated Image List -->
+<!-- Modal Structure -->
+<!-- Modal Structure -->
+<!-- Modal Structure -->
+<div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <span class="prev" onclick="changeImage(-1)">&#10094;</span> <!-- Left Arrow -->
+    <span class="next" onclick="changeImage(1)">&#10095;</span> <!-- Right Arrow -->
+    <img class="modal-content" id="modal-image">
+    <div id="modal-caption"></div>
+</div>
+
+<!-- Updated Image List -->
+<ulp>
+    <li>
+        <a href="javascript:void(0)">
+            <figure>
+                <img src='./Images/Illustrations/Illustration_6.png' 
+                     alt='Illustration of Drift Diffusion Model principles. From Colwell et al. 2024.' 
+                     onclick="openModal(this)">
+                <figcaption>Drift Diffusion Model</figcaption>
+            </figure>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:void(0)">
+            <figure>
+                <img src='./Images/Illustrations/Illustration_2.png' 
+                     alt='Illustration of reinforcement learning Task flow. From Colwell et al. 2024.' 
+                     onclick="openModal(this)">
+                <figcaption>Reinforcement Learning Task</figcaption>
+            </figure>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:void(0)">
+            <figure>
+                <img src='./Images/Illustrations/Illustration_3.png' 
+                     alt='Illustration of drug approaches to cognitive impairment in depression. From Colwell et al. 2022.' 
+                     onclick="openModal(this)">
+                <figcaption>Cognitive Impairment</figcaption>
+            </figure>
+        </a>
+    </li>
+    <a href="javascript:void(0)">
+        <figure>
+            <img src='./Images/Illustrations/Illustration_8.png' 
+                 alt='Illustration of monoaminergic dysregulation. Not published.' 
+                 onclick="openModal(this)">
+            <figcaption>Monoaminergic dysregulation</figcaption>
+        </figure>
+    </a>
+    <a href="javascript:void(0)">
+        <figure>
+            <img src='./Images/Illustrations/Illustration_11.png' 
+                 alt='Illustration of behavioural inhibition task flow. From Colwell et al. 2024.' 
+                 onclick="openModal(this)">
+            <figcaption>Behavioural Inhibition</figcaption>
+        </figure>
+    </a>
+    </li>
+    <a href="javascript:void(0)">
+        <figure>
+            <img src='./Images/Illustrations/Illustration_1.png' 
+                 alt='Illustration of serotonergic innervation throughout the brain, and the mechanism of two serotonin drugs. From Colwell et al. 2024.' 
+                 onclick="openModal(this)">
+            <figcaption>Serotonergic Innervation</figcaption>
+        </figure>
+    </a>
+    </li>
+    <a href="javascript:void(0)">
+        <figure>
+            <img src='./Images/Illustrations/Illustration_12.png' 
+                 alt='Illustration of model validation for a Drift Diffusion Model approach. From supplementary materials of Colwell et al. 2024.' 
+                 onclick="openModal(this)">
+            <figcaption>Model Validation</figcaption>
+        </figure>
+    </a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Images/Illustrations/Illustration_5.png' 
+             alt='An artistic render of brain areas impacted in depression -- featured as the cover of Department of Psychiatry (Uni of Oxford) Anuual Report (2021).' 
+             onclick="openModal(this)">
+        <figcaption>Brain Regions - Depression</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Images/Illustrations/Illustration_9.png' 
+             alt='Analysis of Response Inhibition variables. From Colwell et al. 2024.' 
+             onclick="openModal(this)">
+        <figcaption>Response Inhibition</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Images/Illustrations/Illustration_7.png' 
+             alt='Memory tasks and data' 
+             onclick="openModal(this)">
+        <figcaption>An illustration of memory tasks and applied data analysis. From Colwell et al. 2024.</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Images/Illustrations/Illustration_10.png' 
+             alt='Analysis of reinforcement learning behavioural and computational modelling. From Colwell et al. 2024.' 
+             onclick="openModal(this)">
+        <figcaption>RL data analysis</figcaption>
+    </figure>
+</a>
+</li>
+<a href="javascript:void(0)">
+    <figure>
+        <img src='./Images/Illustrations/Illustration_4.jpg' 
+             alt='Analysis of survey responses from stroke clinicians. From Colwell et al. 2021.' 
+             onclick="openModal(this)">
+        <figcaption>Survey Analysis</figcaption>
+    </figure>
+</a>
+</li>
+
+</ulp>
+
+<script>
+const images = Array.from(document.querySelectorAll('ulp img'));
+let currentIndex = 0;
+
+// Function to open the modal and display the clicked image
+function openModal(image) {
+    const modal = document.getElementById('image-modal');
+    const modalImage = document.getElementById('modal-image');
+    const modalCaption = document.getElementById('modal-caption');
+
+    modal.style.display = 'block'; // Show the modal
+    modalImage.src = image.src;   // Set the modal image to the clicked image
+    modalCaption.textContent = image.alt; // Set the caption
+
+    // Update currentIndex to match the clicked image
+    currentIndex = images.indexOf(image);
+}
+
+// Function to change the image
+function changeImage(direction) {
+    const modalImage = document.getElementById('modal-image');
+    const modalCaption = document.getElementById('modal-caption');
+
+    // Calculate the new index (loop around with modulo operator)
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+
+    // Update the modal with the new image and caption
+    modalImage.src = images[currentIndex].src;
+    modalCaption.textContent = images[currentIndex].alt;
+}
+
+// Close modal when the close button is clicked
+document.querySelector('.close').onclick = function () {
+    const modal = document.getElementById('image-modal');
+    modal.style.display = 'none';
+};
+
+// Close modal when clicking outside the image
+window.onclick = function (event) {
+    const modal = document.getElementById('image-modal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+};
+    </script>
+
+
+    <!-- Footer with image and copyright message -->
+    <div class="footer">
+        <div class="footer-text">
+            <p>Looks like this is the end (Dec 2024). Website created by MJC using CSS/JS/HTML and published under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.</p>
+        </div>
+    </div>
+
+    <script src="script_pubs.js"></script>
+</body>
+
+
+</html>
